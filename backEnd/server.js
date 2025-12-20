@@ -3,7 +3,7 @@ import cors from "cors";
 import mongoose from "mongoose";
 import bcrypt from "bcrypt";
 const app = express();
-const port = 5000;
+const port = process.env.PORT || 5000;
 
 // User schema
 const userSchema = new mongoose.Schema({
