@@ -2,18 +2,20 @@ import React from "react";
 import jalalsonLogo from "../../assets/jalasons-logo.webp";
 import { useState } from "react";
 import Account from "./Account";
+import Cart from "./Cart";
 const LogoBar = () => {
   const [isLocationOpen, setIsLocationOpen] = useState(false);
   const [location, setLocation] = useState("Select Location");
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
-  const [isAccountMenuOpen,setIsAccountMenuOpen] = useState(false)
+  const [isAccountMenuOpen,setIsAccountMenuOpen] = useState(false);
+  const [isCartMenuOpen,setIsCartMenuOpen] = useState(false);
   
   return (
     <>
       {/* Logo Bar Section */}
       <div
-        className={`bg-black w-dvw h-fit flex items-center justify-center border-b-4 border-red-200 text-[10px] sm:text-[10px] md:text-[12px] lg:text-[14px] xl:text-[16px]`}
+        className={`bg-black w-dvw h-fit flex items-center justify-center text-[10px] sm:text-[10px] md:text-[12px] lg:text-[14px] xl:text-[16px]`}
       >
         <div className="h-fit w-full sm:w-full md:w-full lg:w-full xl:w-full flex flex-col-reverse sm:flex-col-reverse md:flex-row lg:flex-row xl:flex-row items-center justify-between p-2 text-white">
           <div className="h-fit w-fit sm:w-fit md:w-[40%] lg:w-[40%] xl:w-[40%] items-center flex flex-row md:flex-row justify-end gap-4 m-4 p-2">
@@ -94,6 +96,7 @@ const LogoBar = () => {
                   height="20"
                   src="https://img.icons8.com/material-rounded/24/FFFFFF/shopping-cart.png"
                   alt="shopping-cart"
+                  onClick={() => setIsCartMenuOpen(!isCartMenuOpen)}
                 />
               </div>
             </div>
@@ -150,6 +153,11 @@ const LogoBar = () => {
       {/*Account/Login Menu*/}
       {isAccountMenuOpen && (
       <Account isOpen= {setIsAccountMenuOpen} />
+      )}
+
+      {/*Cart Menu*/}
+      {isCartMenuOpen && (
+      <Cart isOpen= {setIsCartMenuOpen} />
       )}
       
     </>

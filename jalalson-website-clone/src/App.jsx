@@ -1,7 +1,8 @@
 import { useState } from 'react'
 import Announcment from './components/announcmentSection/Announcment'
 import LogoBar from './components/HeaderSection/LogoBar'
-import Account from './components/HeaderSection/Account'
+import ImageSlider from './components/promoSection/imageSlider'
+
 function App() {
   
 
@@ -11,6 +12,8 @@ function App() {
       <Announcment />
       {/*Logo bar section*/}
       <LogoBar />
+      {/*Promo section*/}
+      <ImageSlider />
     </div>
   )
 }
