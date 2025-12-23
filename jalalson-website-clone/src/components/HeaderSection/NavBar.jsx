@@ -2,7 +2,7 @@ import React from "react";
 
 const NavBar = () => {
   return (
-    <div className="font-bold text-white uppercase  lg:text-[10px] xl:text-[12px] border-2 border-red-600 w-full h-8 bg-black flex justify-center items-center">
+    <div className="font-bold text-white uppercase  lg:text-[10px] xl:text-[12px]  w-full h-8 bg-gray-900 flex justify-center items-center">
       {/*backery items*/}
       <div className="w-[60%] flex flex-row  gap-2 justify-evenly">
         <div className="relative group cursor-pointer">
