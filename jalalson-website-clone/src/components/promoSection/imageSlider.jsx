@@ -42,7 +42,7 @@ const ImageSlider = () => {
 
       <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
         {images.map((_, i) => (
-          <div className="pt-2 pb-2" onClick={() => setIndex(i)}
+          <div className="pt-2 pb-2" onClick={() => setIndex(i)} key={i}
           ><button
           key={i}
             

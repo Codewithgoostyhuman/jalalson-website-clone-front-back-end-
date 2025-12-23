@@ -2,7 +2,7 @@ import React from 'react'
 
 const Announcment = () => {
   return (
-    <div className='font-medium bg-red-600 text-white p-4 flex flex-col items-center gap-2 w-dvw sm:w-full md:w-full lg:w-full xl:w-full text-[10px] sm:text-[10px] md:text-[12px] lg:text-[14px] xl:text-[16px]  '>
+    <div className='font-medium bg-red-600 text-white p-4 flex flex-col items-center gap-2 w-dvw sm:w-full md:w-full lg:w-full xl:w-full text-[10px] sm:text-[10px] md:text-[12px] lg:text-[12px] xl:text-[12px]  '>
       <div>
         <span >Online Payments are not supported for grocery Purchases.</span>
       </div>

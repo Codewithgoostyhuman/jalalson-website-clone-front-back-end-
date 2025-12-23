@@ -13,8 +13,6 @@ function App() {
       <Announcment />
       {/*Logo bar section*/}
       <LogoBar />
-      {/*Navigation bar section*/}
-      <NavBar />
       {/*Promo section*/}
       <ImageSlider />
     </div>
