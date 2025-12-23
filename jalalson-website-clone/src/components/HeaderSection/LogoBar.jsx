@@ -4,7 +4,7 @@ import { useState } from "react";
 import Account from "./Account";
 import Cart from "./Cart";
 import NavBar from "./NavBar";
-import MobileNavBar from "./mobileNavBar";
+import MobileNavBar from "./MobileNavBar";
 import LocationMenu from "./LocationMenu";
 import NewArrivalsButton from "./NewArrivalsButton";
 const LogoBar = () => {
