@@ -40,13 +40,13 @@ const ImageSlider = () => {
         className="w-full h-full object-cover transition-opacity duration-3000"
       />
 
-      <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
+      <div className="absolute bottom-0.5 left-1/2 -translate-x-1/2 flex gap-2">
         {images.map((_, i) => (
           <div className="pt-2 pb-2" onClick={() => setIndex(i)} key={i}
           ><button
           key={i}
             
-            className={`h-0.5 w-6 ${i === index ? "bg-white" : "bg-gray-600/50"}`}
+            className={`h-0.5 w-6 xl:w-10 lg:w-8 md:w-6 sm:w-6 ${i === index ? "bg-white" : "bg-gray-600/50"}`}
           /></div>
           
         ))}
