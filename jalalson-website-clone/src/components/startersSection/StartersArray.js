@@ -1,18 +1,18 @@
-import thefamous19B from "../../assets/productpics/theFamous19B.webp";
-import szechuansoup from "../../assets/productpics/szechuanSoup.webp";
-import hotnsour from "../../assets/productpics/hotAndSourSoup.webp";
-import chickencornsoup from "../../assets/productpics/chickenCornSoup.webp";
+import Famous19B from "../../assets/productpics/Famous19B.webp";
+import szechuan from "../../assets/productpics/szechuan.webp";
+import hotnsour from "../../assets/productpics/hotnsour.webp";
+import cornsoup from "../../assets/productpics/cornSoup.webp";
 
 export const startersArray = [
   {
     name: "The famous 19B",
     price: 498,
-    src: thefamous19B
+    src: Famous19B
   },
   {
     name: "Szechuan Soup",
     price: 498,
-    src: szechuansoup
+    src: szechuan
   },
   {
     name: "Hot and Sour Soup",
@@ -22,7 +22,7 @@ export const startersArray = [
     {
     name: "Chicken Corn Soup",
     price: 498,
-    src: chickencornsoup
+    src: cornsoup
     }
 
-];
+]
