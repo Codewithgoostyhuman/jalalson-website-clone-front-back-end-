@@ -2,7 +2,7 @@ import { useState } from 'react'
 import Announcment from './components/announcmentSection/Announcment'
 import LogoBar from './components/HeaderSection/LogoBar'
 import ImageSlider from './components/promoSection/imageSlider'
-import NavBar from './components/HeaderSection/NavBar'
+import StarterSection from './components/startersSection/StarterSection'
 
 function App() {
   
@@ -15,6 +15,7 @@ function App() {
       <LogoBar />
       {/*Promo section*/}
       <ImageSlider />
+      <StarterSection />
     </div>
   )
 }

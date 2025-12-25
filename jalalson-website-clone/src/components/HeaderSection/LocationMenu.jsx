@@ -20,7 +20,7 @@ const LocationMenu = ({ isOpen, setIsOpen, setLocation }) => {
           >
             <h2 className="text-xl font-bold mb-4">Select Your Location</h2>
             <select
-              className="w-full p-2 border border-gray-300 rounded mb-4"
+              className="w-full p-2 border border-gray-300 rounded mb-4 cursor-pointer"
               onChange={(e) => {
                 setLocation(e.target.value);
                 setIsOpen(false);
@@ -38,7 +38,7 @@ const LocationMenu = ({ isOpen, setIsOpen, setLocation }) => {
             </select>
 
             <button
-              className="bg-red-600 text-white px-4 py-2 rounded"
+              className="bg-red-600 text-white px-4 py-2 rounded cursor-pointer"
               onClick={() => setIsOpen(false)}
             >
               Close

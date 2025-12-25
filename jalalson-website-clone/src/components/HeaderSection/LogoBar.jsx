@@ -20,11 +20,11 @@ const LogoBar = () => {
       <div className="hidden lg:block">
         {/* Logo Bar Section */}
         <div
-          className={`bg-black w-dvw h-fit flex items-center justify-center text-[10px] sm:text-[10px] md:text-[12px] lg:text-[12px] xl:text-[12px]`}
+          className={`bg-black w-full h-fit flex items-center justify-center text-[10px] sm:text-[10px] md:text-[12px] lg:text-[12px] xl:text-[12px]`}
         >
           <div className="h-fit w-full sm:w-full md:w-full lg:w-full xl:w-full flex flex-col-reverse sm:flex-col-reverse md:flex-row lg:flex-row xl:flex-row items-center justify-between p-2 text-white">
             <div className="h-fit w-fit sm:w-fit md:w-[40%] lg:w-[40%] xl:w-[40%] items-center flex flex-row md:flex-row justify-end gap-4 m-4 p-2">
-              <div className="w-fit">
+              <div className="w-fit cursor-pointer flex flex-row gap-2 items-center">
                 <img
                   width="20"
                   height="20"
@@ -61,7 +61,7 @@ const LogoBar = () => {
                 )}
               </div>
               <div
-                className="w-fit text-[14px] sm:text-[14px] md:text-[14px] lg:text-[16px] xl:text-[16px]"
+                className="w-fit text-[14px] sm:text-[14px] md:text-[14px] lg:text-[16px] xl:text-[16px] cursor-pointer"
                 onClick={() => {
                   setIsLocationOpen(true);
                 }}
@@ -75,7 +75,7 @@ const LogoBar = () => {
               className="h-12 sm:h-14 md:h-16 lg:h-18 xl:h-20 xl:w-[20%] lg:w-[20%] md:w-[20%] sm:w-30 object-contain m-4 transition-all duration-1000 ease-in-out items-center"
             />
             <div className="h-fit w-full sm:w-full md:w-[40%] lg:w-[40%] xl:w-[40%] items-center justify-start flex flex-row-reverse xl:flex-row lg:flex-row md:flex-row sm:flex-row-reverse gap-4 m-auto">
-              <div className="h-fit w-1/2 sm:w-1/2 md:w-fit lg:w-fit xl:w-fit justify-end  flex flex-row gap-4 m-0">
+              <div className="h-fit w-1/2 sm:w-1/2 md:w-fit lg:w-fit xl:w-fit justify-end  flex flex-row gap-4 m-0 cursor-pointer">
                 <div>
                   <img
                     width="20"

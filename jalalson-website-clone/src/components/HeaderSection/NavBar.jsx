@@ -86,7 +86,7 @@ const NavBar = () => {
             Bakery <span className="text-xs">▾</span>
           </div>
           <div className="absolute  top-full left-0 hidden group-hover:flex bg-black min-w-[250px] z-50 gap-4 p-2">
-            <div className="flex flex-col gap-1 lg:w-[200px] xl:w-[300px]">
+            <div className="flex flex-col gap-1 lg:w-[200px] xl:w-[300px] capitalize">
               {backeryFirstHalf.map((item, index) => (
                 <div key={index} className="px-3 py-2 hover:bg-red-600">
                   {item}
@@ -94,7 +94,7 @@ const NavBar = () => {
               ))}
             </div>
  
-            <div className="flex flex-col gap-1 lg:w-[200px] xl:w-[300px]">
+            <div className="flex flex-col gap-1 lg:w-[200px] xl:w-[300px] capitalize">
               {backerySecondHalf.map((item, index) => (
                 <div key={index} className="px-3 py-2 hover:bg-red-600">
                   {item}
@@ -109,7 +109,7 @@ const NavBar = () => {
             Deli <span className="text-xs">▾</span>
           </div>
           <div className="absolute top-full left-0 hidden group-hover:flex bg-black min-w-[250px] z-50 gap-4 p-2">
-            <div className="flex flex-col gap-1 lg:w-[200px] xl:w-[300px]">
+            <div className="flex flex-col gap-1 lg:w-[200px] xl:w-[300px] capitalize">
               {deliFirstHalf.map((item, index) => (
                 <div key={index} className="px-3 py-2 hover:bg-red-600">
                   {item}
@@ -117,7 +117,7 @@ const NavBar = () => {
               ))}
             </div>
 
-            <div className="flex flex-col gap-1 lg:w-[200px] xl:w-[300px]">
+            <div className="flex flex-col gap-1 lg:w-[200px] xl:w-[300px] capitalize">
               {deliSecondHalf.map((item, index) => (
                 <div key={index} className="px-3 py-2 hover:bg-red-600">
                   {item}
@@ -133,7 +133,7 @@ const NavBar = () => {
             Pan Asian <span className="text-xs">▾</span>
           </div>
           <div className="absolute top-full left-0 hidden group-hover:flex bg-black min-w-[250px] z-50 gap-4 p-2">
-            <div className="flex flex-col gap-1 lg:w-[200px] xl:w-[300px]">
+            <div className="flex flex-col gap-1 lg:w-[200px] xl:w-[300px] capitalize">
               {panAsianFirstHalf.map((item, index) => (
                 <div key={index} className="px-3 py-2 hover:bg-red-600">
                   {item}
@@ -141,7 +141,7 @@ const NavBar = () => {
               ))}
             </div>
 
-            <div className="flex flex-col gap-1 lg:w-[200px] xl:w-[300px]">
+            <div className="flex flex-col gap-1 lg:w-[200px] xl:w-[300px] capitalize">
               {panAsianSecondHalf.map((item, index) => (
                 <div key={index} className="px-3 py-2 hover:bg-red-600">
                   {item}
@@ -150,16 +150,16 @@ const NavBar = () => {
             </div>
           </div>
         </div>
-        <div className=" w-fit hover:text-red-500">js icecreams</div>
-        <div className=" w-fit hover:text-red-500">sweets</div>
-        <div className=" w-fit hover:text-red-500">deals</div>
+        <div className=" w-fit hover:text-red-500 cursor-pointer">js icecreams</div>
+        <div className=" w-fit hover:text-red-500 cursor-pointer">sweets</div>
+        <div className=" w-fit hover:text-red-500 cursor-pointer">deals</div>
         {/*grocery items*/}
         <div className="relative group cursor-pointer">
           <div className="flex items-center gap-1 hover:text-red-500">
             Grocery <span className="text-xs">▾</span>
           </div>
           <div className="absolute top-full left-0 hidden group-hover:flex bg-black min-w-[250px] z-50 gap-4 p-2">
-            <div className="flex flex-col gap-1 lg:w-[200px] xl:w-[300px]">
+            <div className="flex flex-col gap-1 lg:w-[200px] xl:w-[300px] capitalize">
               {groceryFirstHalf.map((item, index) => (
                 <div key={index} className="px-3 py-2 hover:bg-red-600">
                   {item}
@@ -167,7 +167,7 @@ const NavBar = () => {
               ))}
             </div>
 
-            <div className="flex flex-col gap-1 lg:w-[200px] xl:w-[300px]">
+            <div className="flex flex-col gap-1 lg:w-[200px] xl:w-[300px] capitalize">
               {grocerySecondHalf.map((item, index) => (
                 <div key={index} className="px-3 py-2 hover:bg-red-600">
                   {item}
@@ -176,9 +176,9 @@ const NavBar = () => {
             </div>
           </div>
         </div>
-        <div className=" w-fit hover:text-red-500">careers</div>
-        <div className=" w-fit hover:text-red-500">franchise form</div>
-        <div className=" w-fit hover:text-red-500">sell with us</div>
+        <div className=" w-fit hover:text-red-500 cursor-pointer">careers</div>
+        <div className=" w-fit hover:text-red-500 cursor-pointer">franchise form</div>
+        <div className=" w-fit hover:text-red-500 cursor-pointer">sell with us</div>
       </div>
     </div>
   );
