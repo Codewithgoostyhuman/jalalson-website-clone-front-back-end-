@@ -5,7 +5,7 @@ import ImageSlider from './components/promoSection/imageSlider'
 import StarterSection from './components/startersSection/StarterSection'
 import DeliSection1 from './components/deliSection1/DeliSection1'
 import DeliSection2 from './components/deliSection2/DeliSection2'
-import BakedItemsSection from './components/backedItemsSection/BakedItemsSection'
+import BackedItemsSection from './components/backedItemsSection/BackedItemsSection'
 function App() {
   
 
@@ -18,7 +18,7 @@ function App() {
       {/*Promo section*/}
       <ImageSlider />
       <StarterSection />
-      <BakedItemsSection />
+      <BackedItemsSection />
       <DeliSection1 />
       <DeliSection2 />
     </div>
