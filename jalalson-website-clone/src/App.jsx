@@ -3,7 +3,9 @@ import Announcment from './components/announcmentSection/Announcment'
 import LogoBar from './components/HeaderSection/LogoBar'
 import ImageSlider from './components/promoSection/imageSlider'
 import StarterSection from './components/startersSection/StarterSection'
-
+import BakedItemsSection from './components/backedItemsSection/bakedItemsSection'
+import DeliSection1 from './components/deliSection1/DeliSection1'
+import DeliSection2 from './components/deliSection2/DeliSection2'
 function App() {
   
 
@@ -16,6 +18,9 @@ function App() {
       {/*Promo section*/}
       <ImageSlider />
       <StarterSection />
+      <BakedItemsSection />
+      <DeliSection1 />
+      <DeliSection2 />
     </div>
   )
 }

@@ -16,7 +16,7 @@ const User = mongoose.model("User", userSchema);
 
 // MongoDB connection
 const mongoURI =
-  "mongodb+srv://f2024376279_db_user:JMYajCfsJvmTomW4@jalalsons-clone.gkgbsga.mongodb.net/?appName=jalalsons-clone";
+  "mongodb://127.0.0.1:27017/jalalson-clone"; 
 
 mongoose
   .connect(mongoURI)
