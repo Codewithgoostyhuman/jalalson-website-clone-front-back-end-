@@ -1,7 +1,7 @@
 import plainBread from "../../assets/productpics/plainBreadLarge.webp";
 import milkyBread from "../../assets/productpics/milkyBreadLarge.webp";
 import fiberBread from "../../assets/productpics/fiberBreadSmall.webp";
-import multiSeedBread from "../../assets/productpics/multiseedBread.webp";
+import multiSeedBread from "../../assets/productpics/multiSeedBread.webp";
 export const backedItemsArray = [
   {
      name: "Plain Bread Large",
