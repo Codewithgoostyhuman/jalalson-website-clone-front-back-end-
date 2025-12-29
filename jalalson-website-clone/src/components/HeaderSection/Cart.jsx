@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Cart = ({ isOpen }) => {
+const Cart = ({ isOpen, totalPriceInCart ,setTotalPriceInCart }) => {
   return (
     <div className="fixed inset-0 z-50 flex items-center  border shadow-2xl justify-end">
         <div className='absolute inset-0 bg-black/0 shadow-2xl' onClick={()=>isOpen(false)}/>

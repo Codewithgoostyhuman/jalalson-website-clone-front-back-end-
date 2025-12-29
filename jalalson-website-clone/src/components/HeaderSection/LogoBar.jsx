@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import jalalsonLogo from "../../assets/jalasons-logo.webp";
 import { useState } from "react";
 import Account from "./Account";
@@ -7,6 +7,7 @@ import NavBar from "./NavBar";
 import MobileNavBar from "./MobileNavBar";
 import LocationMenu from "./LocationMenu";
 import NewArrivalsButton from "./NewArrivalsButton";
+import { CartContext } from "../../components/Contexts";
 const LogoBar = () => {
   const [isLocationOpen, setIsLocationOpen] = useState(false);
   const [location, setLocation] = useState("Select Location");
@@ -15,6 +16,12 @@ const LogoBar = () => {
   const [isAccountMenuOpen, setIsAccountMenuOpen] = useState(false);
   const [isCartMenuOpen, setIsCartMenuOpen] = useState(false);
   const [isNavBarOpen, setIsNavBarOpen] = useState(false);
+  const {
+    totalItemsInCart,
+    setTotalItemsInCart,
+    totalPriceInCart,
+    setTotalPriceInCart,
+  } = useContext(CartContext);
   return (
     <>
       <div className="hidden lg:block">
@@ -94,7 +101,15 @@ const LogoBar = () => {
                     onClick={() => setIsAccountMenuOpen(!isAccountMenuOpen)}
                   />
                 </div>
-                <div>
+                <div className="relative cursor-pointer">
+                  <div
+                    className="absolute -top-2 -right-2 flex items-center justify-center
+      w-5 h-5 text-[10px] font-bold text-white
+      bg-red-500 rounded-full"
+                  >
+                    {totalItemsInCart}
+                  </div>
+
                   <img
                     width="20"
                     height="20"
@@ -113,8 +128,17 @@ const LogoBar = () => {
       </div>
 
       {/*Mobile Navigation Bar*/}
-      <MobileNavBar location={location}  searchQuery ={searchQuery} setSearchQuery = {setSearchQuery} isAccountMenuOpen={isAccountMenuOpen} isCartMenuOpen={isCartMenuOpen}  setIsAccountMenuOpen={setIsAccountMenuOpen} setIsCartMenuOpen={setIsCartMenuOpen} setIsLocationOpen={setIsLocationOpen} />
-      
+      <MobileNavBar
+        location={location}
+        searchQuery={searchQuery}
+        setSearchQuery={setSearchQuery}
+        isAccountMenuOpen={isAccountMenuOpen}
+        isCartMenuOpen={isCartMenuOpen}
+        setIsAccountMenuOpen={setIsAccountMenuOpen}
+        setIsCartMenuOpen={setIsCartMenuOpen}
+        setIsLocationOpen={setIsLocationOpen}
+      />
+
       {/* Location Menu */}
       {isLocationOpen && (
         <LocationMenu
@@ -127,7 +151,13 @@ const LogoBar = () => {
       {isAccountMenuOpen && <Account isOpen={setIsAccountMenuOpen} />}
 
       {/*Cart Menu*/}
-      {isCartMenuOpen && <Cart isOpen={setIsCartMenuOpen} />}
+      {isCartMenuOpen && (
+        <Cart
+          isOpen={setIsCartMenuOpen}
+          totalPriceInCart={totalPriceInCart}
+          setTotalPriceInCart={setTotalPriceInCart}
+        />
+      )}
     </>
   );
 };
